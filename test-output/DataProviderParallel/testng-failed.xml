@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [DataProviderParallel]" parallel="methods" data-provider-thread-count="2">
+  <test name="Test-1(failed)" parallel="methods">
+    <classes>
+      <class name="com.connections.DataProviders">
+        <methods>
+          <include name="sendingMails" invocation-numbers="1 0"/>
+        </methods>
+      </class> <!-- com.connections.DataProviders -->
+    </classes>
+  </test> <!-- Test-1(failed) -->
+</suite> <!-- Failed suite [DataProviderParallel] -->

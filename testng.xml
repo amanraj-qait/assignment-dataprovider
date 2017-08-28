@@ -1,0 +1,10 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DataProviderParallel"    parallel="methods"	thread-count="3"  data-provider-thread-count="2">
+<listeners> <listener class-name="com.report.MyReporterListener"/> </listeners>
+	<test name="Test-1">
+		<classes>
+			<class name="com.connections.DataProviders" />
+		</classes>
+	</test>
+</suite>
