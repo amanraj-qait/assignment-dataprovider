@@ -2,33 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="DataProviderParallel" duration-ms="36358" started-at="2017-08-28T09:13:56Z" finished-at="2017-08-28T09:14:33Z">
+  <suite name="DataProviderParallel" duration-ms="39839" started-at="2017-08-30T06:22:53Z" finished-at="2017-08-30T06:23:33Z">
     <groups>
     </groups>
-    <test name="Test-1" duration-ms="36358" started-at="2017-08-28T09:13:56Z" finished-at="2017-08-28T09:14:33Z">
-      <class name="com.connections.DataProviders">
-        <test-method status="PASS" signature="sendingMails(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.connections.DataProviders@6d4b1c02]" name="sendingMails" duration-ms="34488" started-at="2017-08-28T14:43:57Z" data-provider="ComposeEmail" finished-at="2017-08-28T14:44:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[amanraj.cs20@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Greetings]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendingMails -->
-        <test-method status="PASS" signature="sendingMails(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.connections.DataProviders@6d4b1c02]" name="sendingMails" duration-ms="35822" started-at="2017-08-28T14:43:57Z" data-provider="ComposeEmail" finished-at="2017-08-28T14:44:33Z">
+    <test name="Test-1" duration-ms="39839" started-at="2017-08-30T06:22:53Z" finished-at="2017-08-30T06:23:33Z">
+      <class name="com.tests.DataProvidersTest">
+        <test-method status="PASS" signature="sendingMails(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tests.DataProvidersTest@57baeedf]" name="sendingMails" duration-ms="39142" started-at="2017-08-30T11:52:54Z" data-provider="ComposeEmail" finished-at="2017-08-30T11:53:33Z">
           <params>
             <param index="0">
               <value>
@@ -49,7 +28,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendingMails -->
-      </class> <!-- com.connections.DataProviders -->
+        <test-method status="PASS" signature="sendingMails(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tests.DataProvidersTest@57baeedf]" name="sendingMails" duration-ms="39313" started-at="2017-08-30T11:52:54Z" data-provider="ComposeEmail" finished-at="2017-08-30T11:53:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amanraj.cs20@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Greetings]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendingMails -->
+      </class> <!-- com.tests.DataProvidersTest -->
     </test> <!-- Test-1 -->
   </suite> <!-- DataProviderParallel -->
 </testng-results>

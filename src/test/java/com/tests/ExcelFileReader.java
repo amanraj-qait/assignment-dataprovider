@@ -1,4 +1,4 @@
-package com.connections;
+package com.tests;
 
 import java.io.File;
 import java.io.FileInputStream;

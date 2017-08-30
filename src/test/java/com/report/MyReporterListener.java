@@ -353,8 +353,6 @@ tableColumnStart("Scenarios<br/>Passed");
 tableColumnStart("# skipped");
 tableColumnStart("# failed");
 tableColumnStart("Total<br/>Time");
-tableColumnStart("Included<br/>Groups");
-tableColumnStart("Excluded<br/>Groups");
 m_out.println("</tr>");
 NumberFormat formatter = new DecimalFormat("#,##0.0");
 int qty_tests = 0;
@@ -393,8 +391,6 @@ summaryCell(
 formatter.format((overview.getEndDate().getTime() - overview
 .getStartDate().getTime()) / 1000.)
 + " seconds", true);
-summaryCell(overview.getIncludedGroups());
-summaryCell(overview.getExcludedGroups());
 m_out.println("</tr>");
 m_testIndex++;
 }
@@ -424,14 +420,6 @@ tableColumnStart("DBUserName|Password");
 m_out.println("</tr>");
 m_out.println("</table>");
 m_out.println("<p></p>");
-}
-
-private void summaryCell(String[] val) {
-StringBuffer b = new StringBuffer();
-for (String v : val) {
-b.append(v + " ");
-}
-summaryCell(b.toString(), true);
 }
 
 private void summaryCell(String v, boolean isgood) {

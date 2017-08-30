@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-DataProviderParallel">
-                    <span>C:\Users\amanraj\workspace\assignment-dataprovider\testng.xml</span>
+                    <span>C:\Users\amanraj\Desktop\Git\assignment-dataprovider\src\test\resources\xml files\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,12 +101,12 @@
                     <div class="method-list-content passed suite-DataProviderParallel">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-DataProviderParallel" title="com.connections.DataProviders" hash-for-method="sendingMails(amanraj.cs20@gmail.com, Test, Greetings)">sendingMails(amanraj.cs20@gmail.com, Test, Greetings)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-DataProviderParallel" title="com.tests.DataProvidersTest" hash-for-method="sendingMails(arsc997@gmail.com, Test, Greetings)">sendingMails(arsc997@gmail.com, Test, Greetings)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-DataProviderParallel" title="com.connections.DataProviders" hash-for-method="sendingMails(arsc997@gmail.com, Test, Greetings)">sendingMails(arsc997@gmail.com, Test, Greetings)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-DataProviderParallel" title="com.tests.DataProvidersTest" hash-for-method="sendingMails(amanraj.cs20@gmail.com, Test, Greetings)">sendingMails(amanraj.cs20@gmail.com, Test, Greetings)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-DataProviderParallel -->
@@ -124,17 +124,9 @@
           <div class="suite-DataProviderParallel-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.connections.DataProviders</span>
+              <span class="class-name">com.tests.DataProvidersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="sendingMails(amanraj.cs20@gmail.com, Test, Greetings)">
-                  </a> <!-- sendingMails(amanraj.cs20@gmail.com, Test, Greetings) -->
-                  <span class="method-name">sendingMails</span>
-                  <span class="parameters">(amanraj.cs20@gmail.com, Test, Greetings)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="sendingMails(arsc997@gmail.com, Test, Greetings)">
@@ -143,21 +135,32 @@
                   <span class="parameters">(arsc997@gmail.com, Test, Greetings)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendingMails(amanraj.cs20@gmail.com, Test, Greetings)">
+                  </a> <!-- sendingMails(amanraj.cs20@gmail.com, Test, Greetings) -->
+                  <span class="method-name">sendingMails</span>
+                  <span class="parameters">(amanraj.cs20@gmail.com, Test, Greetings)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-DataProviderParallel-class-passed -->
         </div> <!-- panel DataProviderParallel -->
         <div panel-name="test-xml-DataProviderParallel" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\amanraj\workspace\assignment-dataprovider\testng.xml</span>
+            <span class="header-content">C:\Users\amanraj\Desktop\Git\assignment-dataprovider\src\test\resources\xml files\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;DataProviderParallel&quot; parallel=&quot;methods&quot; data-provider-thread-count=&quot;2&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.report.MyReporterListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test name=&quot;Test-1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.connections.DataProviders&quot;/&gt;
+      &lt;class name=&quot;com.tests.DataProvidersTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test-1 --&gt;
 &lt;/suite&gt; &lt;!-- DataProviderParallel --&gt;
@@ -200,12 +203,12 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'sendingMails')
-data.setCell(0, 2, 'com.connections.DataProviders')
-data.setCell(0, 3, 35822);
+data.setCell(0, 2, 'com.tests.DataProvidersTest')
+data.setCell(0, 3, 39313);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'sendingMails')
-data.setCell(1, 2, 'com.connections.DataProviders')
-data.setCell(1, 3, 34488);
+data.setCell(1, 2, 'com.tests.DataProvidersTest')
+data.setCell(1, 3, 39142);
 window.suiteTableData['DataProviderParallel']= { tableData: data, tableDiv: 'times-div-DataProviderParallel'}
 return data;
 }
@@ -236,14 +239,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.connections.DataProviders</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.tests.DataProvidersTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">sendingMails(arsc997@gmail.com, Test, Greetings)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">sendingMails(amanraj.cs20@gmail.com, Test, Greetings)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

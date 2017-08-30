@@ -1,4 +1,4 @@
-package com.connections;
+package com.tests;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class DataProviders {
+public class DataProvidersTest {
 	ExcelFileReader action;
 
 	@Test(dataProvider = "ComposeEmail")
